@@ -1,0 +1,936 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    min-height:100vh;
+    background:#f4f6f9;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    width:260px;
+    background:#1f2937;
+    color:#fff;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+    padding:30px 20px;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.logo h2{
+
+    color:#D4AF37;
+    font-size:24px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin:12px 0;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+    color:#fff;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li.active a{
+
+    background:#D4AF37;
+    color:#1f2937;
+
+}
+
+.sidebar ul li i{
+
+    width:20px;
+
+}
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:35px;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.header h1{
+
+    color:#222;
+
+}
+
+.admin-profile{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    background:#fff;
+
+    padding:12px 20px;
+
+    border-radius:50px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.admin-profile i{
+
+    font-size:28px;
+    color:#D4AF37;
+
+}
+
+/* ===========================
+   CARDS
+=========================== */
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:#D4AF37;
+
+    margin-bottom:18px;
+
+}
+
+.card h2{
+
+    font-size:34px;
+
+    color:#222;
+
+    margin-bottom:10px;
+
+}
+
+.card p{
+
+    color:#777;
+
+}
+
+/* ===========================
+   RECENT ACTIVITY
+=========================== */
+
+.recent{
+
+    margin-top:45px;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.recent h2{
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+.recent p{
+
+    color:#777;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+
+    width:80px;
+
+}
+
+.logo h2{
+
+    display:none;
+
+}
+
+.sidebar ul li a{
+
+    justify-content:center;
+
+}
+
+.sidebar ul li a span{
+
+    display:none;
+
+}
+
+.main-content{
+
+    margin-left:80px;
+    width:calc(100% - 80px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.header{
+
+    flex-direction:column;
+    align-items:flex-start;
+    gap:20px;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================
+   RECENT BOOKINGS TABLE
+=========================== */
+
+.recent table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+
+}
+
+.recent th{
+
+    background:#D4AF37;
+    color:#fff;
+    padding:14px;
+
+}
+
+.recent td{
+
+    padding:14px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+
+}
+
+.recent tr:hover{
+
+    background:#f8f8f8;
+
+}
+
+/*=========================
+BOOKING TABLE
+==========================*/
+
+.booking-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:#fff;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.booking-table th{
+
+background:#D4AF37;
+
+color:#fff;
+
+padding:16px;
+
+}
+
+.booking-table td{
+
+padding:15px;
+
+text-align:center;
+
+border-bottom:1px solid #eee;
+
+}
+
+.booking-table tr:hover{
+
+background:#fafafa;
+
+}
+
+.delete-btn{
+
+display:inline-block;
+
+padding:8px 12px;
+
+background:#dc3545;
+
+color:#fff;
+
+border-radius:8px;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+.delete-btn:hover{
+
+background:#b02a37;
+
+}
+
+#searchBooking{
+
+width:350px;
+
+padding:12px;
+
+border:1px solid #ccc;
+
+border-radius:8px;
+
+font-size:15px;
+
+}
+
+.success-message{
+
+    background:#d4edda;
+
+    color:#155724;
+
+    padding:15px;
+
+    border-left:5px solid #28a745;
+
+    margin:20px 0;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+/*====================================
+ADMIN LOGIN
+=====================================*/
+
+.login-container{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url("../images/hero-bg.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.login-box{
+
+width:420px;
+
+background:rgba(255,255,255,.1);
+
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+
+text-align:center;
+
+}
+
+.login-box h2{
+
+color:#D4AF37;
+
+font-size:32px;
+
+margin-bottom:10px;
+
+}
+
+.login-box p{
+
+color:#fff;
+
+margin-bottom:30px;
+
+}
+
+.input-box{
+
+position:relative;
+
+margin-bottom:25px;
+
+}
+
+.input-box input{
+
+width:100%;
+
+padding:15px 45px;
+
+border:none;
+
+border-radius:10px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.input-box .fa-user,
+.input-box .fa-lock{
+
+position:absolute;
+
+left:15px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+color:#777;
+
+}
+
+#togglePassword{
+
+position:absolute;
+
+right:15px;
+
+top:50%;
+
+transform:translateY(-50%);
+
+cursor:pointer;
+
+color:#777;
+
+}
+
+.login-btn{
+
+width:100%;
+
+padding:15px;
+
+background:#D4AF37;
+
+color:#fff;
+
+border:none;
+
+border-radius:10px;
+
+font-size:18px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.login-btn:hover{
+
+background:#b88a16;
+
+}
+
+.login-error{
+
+    background:#ffdddd;
+
+    color:#b00020;
+
+    padding:12px;
+
+    margin-bottom:20px;
+
+    border-left:5px solid red;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+}
+
+.add-btn{
+
+display:inline-block;
+
+background:#D4AF37;
+
+color:#fff;
+
+padding:12px 20px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.add-btn:hover{
+
+background:#b88a16;
+
+}
+
+.top-bar{
+
+display:flex;
+
+justify-content:flex-end;
+
+margin-bottom:20px;
+
+}
+
+.package-form{
+
+background:#fff;
+
+padding:30px;
+
+border-radius:12px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+max-width:700px;
+
+}
+
+.package-form label{
+
+display:block;
+
+margin-top:15px;
+
+margin-bottom:8px;
+
+font-weight:bold;
+
+}
+
+.package-form input,
+.package-form textarea{
+
+width:100%;
+
+padding:12px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+.package-form textarea{
+
+resize:vertical;
+
+}
+
+.booking-table img{
+
+    width:80px;
+
+    height:60px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+}
+
+.edit-btn{
+
+    display:inline-block;
+
+    background:#3498db;
+
+    color:#fff;
+
+    padding:8px 10px;
+
+    border-radius:6px;
+
+    text-decoration:none;
+
+    margin-right:8px;
+
+}
+
+.edit-btn:hover{
+
+    background:#217dbb;
+
+}
+
+/* Booking Status */
+
+/* Booking Status Badge */
+
+.status-badge{
+
+    display:inline-flex;
+    align-items:center;
+    gap:7px;
+
+    padding:7px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+
+
+/* Pending */
+
+.status-badge.pending{
+
+    background:#fff3cd;
+    color:#856404;
+
+}
+
+
+/* Confirmed */
+
+.status-badge.confirmed{
+
+    background:#d1fae5;
+    color:#047857;
+
+}
+
+
+/* Cancelled */
+
+.status-badge.cancelled{
+
+    background:#fee2e2;
+    color:#b91c1c;
+
+}
+
+
+/* Completed */
+
+.status-badge.completed{
+
+    background:#dbeafe;
+    color:#1d4ed8;
+
+}
+
+.complete-btn{
+
+background:#2563eb;
+
+padding:8px 12px;
+
+border-radius:6px;
+
+color:white;
+
+text-decoration:none;
+
+font-size:14px;
+
+}
+
+.complete-btn:hover{
+
+background:#1d4ed8;
+
+}
+
+.package-form{
+
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    max-width:900px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.package-form label{
+
+    display:block;
+    margin-top:18px;
+    margin-bottom:8px;
+    font-weight:600;
+
+}
+
+.package-form input,
+.package-form textarea,
+.package-form select{
+
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+
+}
+
+.package-form textarea{
+
+    resize:vertical;
+
+}
+
+.add-btn{
+
+    display:inline-block;
+    margin-top:25px;
+    background:#0B1F3A;
+    color:#fff;
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+.add-btn:hover{
+
+    background:#D4AF37;
+
+}
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+table th{
+
+    background:#0B1F3A;
+    color:#fff;
+    padding:16px;
+    text-align:left;
+    font-size:15px;
+
+}
+
+table td{
+
+    padding:15px;
+    border-bottom:1px solid #eee;
+    vertical-align:middle;
+
+}
+
+table tr:hover{
+
+    background:#f8f9fb;
+
+}
+
+table img{
+
+    width:90px;
+    height:70px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+.edit-btn{
+
+    display:inline-block;
+    padding:8px 14px;
+    background:#3498db;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    margin-right:6px;
+
+}
+
+.edit-btn:hover{
+
+    background:#2980b9;
+
+}
+
+.delete-btn{
+
+    display:inline-block;
+    padding:8px 14px;
+    background:#e74c3c;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+
+}
+
+.delete-btn:hover{
+
+    background:#c0392b;
+
+}
+
+

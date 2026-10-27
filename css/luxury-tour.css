@@ -1,0 +1,1008 @@
+/*======================================
+ GOOGLE FONT
+======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#333;
+    overflow-x:hidden;
+}
+
+/*======================================
+ HERO
+======================================*/
+
+.luxury-hero{
+
+    height:90vh;
+    background:url("../images/categories/luxury-banner.jfif") center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.luxury-hero::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,58,.68);
+
+}
+
+.luxury-overlay{
+
+    position:relative;
+    z-index:10;
+    text-align:center;
+    color:#fff;
+    max-width:900px;
+    padding:20px;
+
+}
+
+.hero-tag{
+
+    color:#FFD166;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-weight:700;
+    display:block;
+    margin-bottom:20px;
+
+}
+
+.luxury-overlay h1{
+
+    font-size:72px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:25px;
+
+}
+
+.luxury-overlay p{
+
+    font-size:20px;
+    line-height:1.9;
+    opacity:.95;
+
+}
+
+/*======================================
+ INTRO
+======================================*/
+
+.luxury-intro{
+
+    padding:120px 10%;
+    text-align:center;
+    background:#fff;
+
+}
+
+.intro-container{
+
+    max-width:900px;
+    margin:auto;
+
+}
+
+.intro-container span{
+
+    color:#FFD166;
+    text-transform:uppercase;
+    font-weight:700;
+    letter-spacing:4px;
+
+}
+
+.intro-container h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin:25px 0;
+    font-family:"Playfair Display",serif;
+
+}
+
+.intro-container p{
+
+    font-size:18px;
+    line-height:2;
+    color:#666;
+
+}
+
+/*======================================
+ SECTION
+======================================*/
+
+.luxury-section{
+
+    padding:120px 8%;
+    background:#f8f9fc;
+
+}
+
+.section-heading{
+
+    text-align:center;
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:80px;
+    font-family:"Playfair Display",serif;
+
+}
+
+/*======================================
+ TOUR
+======================================*/
+
+.luxury-tour{
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+    margin-bottom:120px;
+
+}
+
+.reverse{
+
+    flex-direction:row-reverse;
+
+}
+
+/*======================================
+ IMAGE
+======================================*/
+
+.tour-image{
+
+    flex:1;
+    overflow:hidden;
+    border-radius:25px;
+
+}
+
+.tour-image img{
+
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    transition:.6s;
+
+}
+
+.luxury-tour:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/*======================================
+ CONTENT
+======================================*/
+
+.tour-content{
+
+    flex:1;
+
+}
+
+.tour-location{
+
+    display:inline-block;
+    color:#FFD166;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:700;
+    margin-bottom:20px;
+
+}
+
+.tour-content h2{
+
+    font-size:42px;
+    color:#0B1F3A;
+    margin-bottom:25px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.tour-content p{
+
+    font-size:17px;
+    color:#666;
+    line-height:2;
+    margin:30px 0;
+
+}
+
+/*======================================
+ META
+======================================*/
+
+.tour-meta{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+
+}
+
+.tour-meta span{
+
+    background:#fff;
+    padding:14px 22px;
+    border-radius:40px;
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    font-size:14px;
+    font-weight:600;
+
+}
+
+.tour-meta i{
+
+    color:#FFD166;
+    margin-right:8px;
+
+}
+
+/*==========================
+LUXURY EXPERIENCES
+==========================*/
+
+.experience-section{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.experience-section h2{
+
+    text-align:center;
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:70px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.experience-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+
+}
+
+.experience-card{
+
+    background:#fff;
+    padding:45px 35px;
+    text-align:center;
+    border-radius:20px;
+    transition:.4s;
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.experience-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.experience-card i{
+
+    font-size:45px;
+    color:#FFD166;
+    margin-bottom:25px;
+
+}
+
+.experience-card h3{
+
+    color:#0B1F3A;
+    margin-bottom:15px;
+    font-size:24px;
+
+}
+
+.experience-card p{
+
+    color:#666;
+    line-height:1.8;
+
+}
+
+/*==========================
+JOURNEY GALLERY
+==========================*/
+
+.luxury-gallery{
+
+    padding:120px 8%;
+    background:#f8f9fc;
+
+}
+
+.luxury-gallery h2{
+
+    text-align:center;
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:70px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+    height:320px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.5s;
+    cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/*==========================
+CTA
+==========================*/
+
+.luxury-cta{
+
+    padding:120px 8%;
+    background:#0B1F3A;
+    text-align:center;
+    color:#fff;
+
+}
+
+.luxury-cta h2{
+
+    font-size:50px;
+    margin-bottom:25px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.luxury-cta p{
+
+    max-width:750px;
+    margin:auto;
+    line-height:2;
+    font-size:18px;
+
+}
+
+.cta-btn{
+
+    display:inline-block;
+    margin-top:45px;
+    background:#FFD166;
+    color:#0B1F3A;
+    padding:18px 45px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+
+}
+
+.cta-btn:hover{
+
+    background:#fff;
+
+}
+/*======================================
+ BUTTON
+======================================*/
+
+.tour-buttons{
+
+    display:flex;
+    gap:18px;
+    margin-top:35px;
+
+}
+
+.book-btn{
+
+    background:#FFD166;
+    color:#0B1F3A;
+    padding:16px 34px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+
+}
+
+.book-btn:hover{
+
+    background:#0B1F3A;
+    color:#fff;
+
+}
+
+.adventure-hero{
+
+height:100vh;
+
+background:url("../images/categories/adventure-tour.jpg") center/cover;
+
+position:relative;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.adventure-overlay{
+
+position:absolute;
+
+inset:0;
+
+background:rgba(11,31,58,.70);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+color:#fff;
+
+}
+
+/*==============================
+ADVENTURE HERO
+==============================*/
+
+.adventure-overlay .hero-tag{
+
+    color:#FFD166;
+    letter-spacing:5px;
+    font-size:15px;
+    font-weight:600;
+    text-transform:uppercase;
+    margin-bottom:25px;
+
+}
+
+.adventure-overlay h1{
+
+    font-size:68px;
+    color:#fff;
+    font-family:"Playfair Display",serif;
+    margin-bottom:25px;
+    max-width:900px;
+    line-height:1.2;
+
+}
+
+.adventure-overlay p{
+
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+    color:#f5f5f5;
+
+}
+
+
+/*==============================
+ADVENTURE INTRO
+==============================*/
+
+.adventure-intro{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.adventure-intro .intro-container{
+
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.adventure-intro .section-tag{
+
+    display:inline-block;
+    color:#FFD166;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.adventure-intro h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    font-family:"Playfair Display",serif;
+    margin-bottom:30px;
+
+}
+
+.adventure-intro p{
+
+    font-size:18px;
+    line-height:2;
+    color:#666;
+
+}
+
+/*=================================
+TOUR SECTIONS
+=================================*/
+
+.tour-section{
+
+    max-width:1300px;
+    margin:120px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:70px;
+
+    padding:0 8%;
+
+}
+.tour-section:nth-child(even){
+    background:#f8f9fc;
+}
+
+.tour-section:nth-child(even) .tour-image{
+    order:2;
+}
+
+.tour-section:nth-child(even) .tour-content{
+    order:1;
+}
+
+.tour-image img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    display:block;
+
+}
+.tour-image img:hover{
+    transform:scale(1.03);
+}
+
+.tour-tag{
+    color:#FFD166;
+    font-size:14px;
+    letter-spacing:3px;
+    font-weight:700;
+    text-transform:uppercase;
+}
+
+.tour-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+.tour-content h2{
+    font-size:46px;
+    color:#0B1F3A;
+    margin:20px 0;
+    font-family:"Playfair Display",serif;
+}
+
+.tour-content p{
+    color:#666;
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:30px;
+}
+
+.tour-meta{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-bottom:35px;
+}
+
+.tour-meta span{
+    background:#f5f5f5;
+    padding:15px;
+    border-radius:12px;
+    text-align:center;
+    color:#0B1F3A;
+    font-size:15px;
+    font-weight:500;
+}
+
+.tour-meta i{
+    color:#FFD166;
+    margin-right:8px;
+}
+
+.tour-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.book-btn{
+    background:#FFD166;
+    color:#0B1F3A;
+    padding:14px 32px;
+    border-radius:35px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.book-btn:hover{
+    background:#0B1F3A;
+    color:#fff;
+}
+
+.tour-section:nth-child(even) .tour-image{
+
+    order:2;
+
+}
+
+.tour-section:nth-child(even) .tour-content{
+
+    order:1;
+
+}
+
+/*==================================
+FAMILY HERO
+==================================*/
+
+.family-hero{
+
+    height:100vh;
+    background:url("../images/fam-hero.jfif") center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.family-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,58,.70);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#fff;
+
+    padding:20px;
+
+}
+
+.family-overlay .hero-tag{
+
+    color:#FFD166;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:15px;
+    margin-bottom:25px;
+
+}
+
+.family-overlay h1{
+
+    font-size:68px;
+    font-family:"Playfair Display",serif;
+    color:#fff;
+    margin-bottom:25px;
+    max-width:900px;
+    line-height:1.2;
+
+}
+
+.family-overlay p{
+
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+    color:#f5f5f5;
+
+}
+
+/*==================================
+FAMILY INTRO
+==================================*/
+
+.family-intro{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.family-intro .intro-container{
+
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.family-intro .section-tag{
+
+    display:inline-block;
+    color:#FFD166;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.family-intro h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:30px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.family-intro p{
+
+    font-size:18px;
+    color:#666;
+    line-height:2;
+
+}
+
+/*==================================
+CULTURAL HERO
+==================================*/
+
+.cultural-hero{
+
+    height:100vh;
+    background:url("../images/categories/cultural hero.jfif") center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.cultural-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,58,.70);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#fff;
+    padding:20px;
+
+}
+
+.cultural-overlay h1{
+
+    font-size:68px;
+    font-family:"Playfair Display",serif;
+    color:#fff;
+    max-width:900px;
+    margin-bottom:25px;
+
+}
+
+.cultural-overlay p{
+
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+
+}
+
+.cultural-intro{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.cultural-intro .intro-container{
+
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.cultural-intro .section-tag{
+
+    display:inline-block;
+    color:#FFD166;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.cultural-intro h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:30px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.cultural-intro p{
+
+    font-size:18px;
+    color:#666;
+    line-height:2;
+
+}
+
+/*==================================
+WINTER HERO
+==================================*/
+
+.winter-hero{
+
+    height:100vh;
+    background:url("../images/categories/winter hero.jfif") center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.winter-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,58,.70);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:#fff;
+    padding:20px;
+
+}
+
+.winter-overlay h1{
+
+    font-size:68px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:25px;
+    max-width:900px;
+
+}
+
+.winter-overlay p{
+
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+
+}
+
+.winter-intro{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.winter-intro .intro-container{
+
+    max-width:950px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.winter-intro .section-tag{
+
+    display:inline-block;
+    color:#FFD166;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:600;
+    margin-bottom:20px;
+
+}
+
+.winter-intro h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin-bottom:30px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.winter-intro p{
+
+    font-size:18px;
+    color:#666;
+    line-height:2;
+
+}

@@ -1,0 +1,323 @@
+/*=========================================
+UPCOMING HERO
+=========================================*/
+
+.upcoming-hero{
+
+    height:100vh;
+    background:url("../images/upcoming/upcoming-hero.jpg") center center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.upcoming-overlay{
+
+    position:absolute;
+    inset:0;
+    background:rgba(11,31,58,.70);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:#fff;
+    padding:20px;
+
+}
+
+.upcoming-overlay h1{
+
+    font-size:68px;
+    font-family:"Playfair Display",serif;
+    margin-bottom:25px;
+    max-width:900px;
+
+}
+
+.upcoming-overlay p{
+
+    max-width:760px;
+    font-size:20px;
+    line-height:1.9;
+
+}
+
+/*=========================================
+INTRO
+=========================================*/
+
+.upcoming-intro{
+
+    padding:120px 8%;
+    background:#fff;
+
+}
+
+.upcoming-intro .intro-container{
+
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+
+}
+
+.upcoming-intro h2{
+
+    font-size:48px;
+    color:#0B1F3A;
+    margin:20px 0 30px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.upcoming-intro p{
+
+    font-size:18px;
+    color:#666;
+    line-height:2;
+
+}
+
+/*=========================================
+TRIPS
+=========================================*/
+
+.upcoming-trips{
+
+    padding:120px 8%;
+    background:#f8fafc;
+
+}
+
+.trip-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    gap:40px;
+
+}
+
+.trip-card{
+
+    background:#fff;
+    border-radius:22px;
+    overflow:hidden;
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.trip-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.trip-image{
+
+    position:relative;
+    height:270px;
+    overflow:hidden;
+
+}
+
+.trip-image img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+
+}
+
+.trip-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.calendar-badge{
+
+    position:absolute;
+
+    top:20px;
+
+    left:20px;
+
+    width:82px;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+
+    text-align:center;
+
+}
+
+.calendar-month{
+
+    background:#1A936F;
+
+    color:#fff;
+
+    padding:8px 0;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.calendar-day{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    color:#0B1F3A;
+
+    padding-top:12px;
+
+}
+
+.calendar-year{
+
+    font-size:13px;
+
+    color:#777;
+
+    padding-bottom:12px;
+
+}
+
+.trip-content{
+
+    padding:35px;
+
+}
+
+.trip-destination{
+
+    color:#1A936F;
+    font-weight:600;
+    display:block;
+    margin-bottom:15px;
+
+}
+
+.trip-content h3{
+
+    color:#0B1F3A;
+    font-size:32px;
+    margin-bottom:20px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.trip-content p{
+
+    color:#666;
+    line-height:1.9;
+    margin-bottom:25px;
+
+}
+
+.trip-info{
+
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:30px;
+    padding:18px 0;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+
+}
+
+.trip-info div{
+
+    color:#444;
+    font-weight:600;
+
+}
+
+.trip-info i{
+
+    color:#1A936F;
+    margin-right:8px;
+
+}
+
+.trip-footer{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+.trip-footer h4{
+
+    font-size:30px;
+    color:#0B1F3A;
+    font-family:"Playfair Display",serif;
+
+}
+
+/*=========================================
+CTA
+=========================================*/
+
+.upcoming-cta{
+
+    padding:120px 8%;
+    background:#0B1F3A;
+    text-align:center;
+    color:#fff;
+
+}
+
+.upcoming-cta h2{
+
+    font-size:50px;
+    margin-bottom:25px;
+    font-family:"Playfair Display",serif;
+
+}
+
+.upcoming-cta p{
+
+    max-width:760px;
+    margin:auto;
+    line-height:2;
+    margin-bottom:40px;
+    color:#ddd;
+
+}
+.back-home-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 5%;
+    padding: 10px 18px;
+    background: #0B1F3A;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: background 0.3s ease;
+}
+
+.back-home-btn:hover {
+    background: #163d65;
+}

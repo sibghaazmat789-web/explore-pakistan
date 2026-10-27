@@ -1,0 +1,964 @@
+/*=========================================
+        RESPONSIVE DESIGN
+==========================================*/
+
+/* ---------- Large Tablets ---------- */
+
+@media (max-width:1200px){
+
+.hero-content h1{
+    font-size:55px;
+}
+
+.search-container{
+    flex-wrap:wrap;
+}
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+}
+
+
+/* ---------- Tablets ---------- */
+
+@media (max-width:992px){
+
+/* Navbar */
+
+.nav-links{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:#0B1F3A;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    display:none;
+
+    padding:25px 0;
+
+}
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+.menu-btn{
+
+    display:block;
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+}
+
+/* Hero */
+
+.hero-content{
+
+    text-align:center;
+
+}
+
+.hero-content h1{
+
+    font-size:48px;
+
+}
+
+.hero-content p{
+
+    width:100%;
+
+}
+
+/* Search */
+
+.search-container{
+
+    flex-direction:column;
+
+}
+
+/* Destinations */
+
+.destination-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/* Packages */
+
+.package-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+/* Gallery */
+
+.gallery-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.gallery-item.wide{
+
+    grid-column:span 2;
+
+}
+
+.gallery-item.tall{
+
+    grid-row:span 1;
+
+}
+
+/* Footer */
+
+.footer-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:768px){
+
+.section-title h2{
+
+    font-size:34px;
+
+}
+
+.hero{
+
+    height:90vh;
+
+}
+
+.hero-content h1{
+
+    font-size:38px;
+
+}
+
+.hero-content p{
+
+    font-size:16px;
+
+}
+
+.hero-btn{
+
+    padding:15px 28px;
+
+}
+
+/* Cards */
+
+.destination-grid,
+.package-grid,
+.why-container,
+.testimonial-container,
+.stats-container{
+
+    grid-template-columns:1fr;
+
+}
+
+/* Gallery */
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.gallery-item.wide{
+
+    grid-column:span 1;
+
+}
+
+/* CTA */
+
+.cta{
+
+    height:400px;
+
+}
+
+.cta-overlay h2{
+
+    font-size:38px;
+
+}
+
+/* Contact */
+
+.contact-form{
+
+    padding:25px;
+
+}
+
+/* Footer */
+
+.footer-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer-social{
+
+    justify-content:center;
+
+}
+
+}
+
+
+/* ---------- Small Phones ---------- */
+
+@media (max-width:480px){
+
+.hero-content h1{
+
+    font-size:30px;
+
+}
+
+.section-title h2{
+
+    font-size:28px;
+
+}
+
+.search-container{
+
+    padding:20px;
+
+}
+
+.package-content h3{
+
+    font-size:24px;
+
+}
+
+.card-content h3{
+
+    font-size:24px;
+
+}
+
+.cta-overlay h2{
+
+    font-size:30px;
+
+}
+
+#backToTop{
+
+    width:45px;
+
+    height:45px;
+
+    font-size:16px;
+
+}
+
+}
+@media(max-width:768px){
+
+.booking-form{
+    grid-template-columns:1fr;
+}
+
+.full-width{
+    grid-column:1;
+}
+
+.booking-container{
+    padding:30px 20px;
+}
+
+.booking-header h2{
+    font-size:32px;
+}
+
+}
+
+@media (max-width:992px){
+
+.gallery-grid{
+    columns:3 200px;
+}
+
+}
+
+@media (max-width:768px){
+
+.gallery-grid{
+    columns:2 180px;
+}
+
+}
+
+@media (max-width:576px){
+
+.gallery-grid{
+    columns:1;
+}
+
+}
+
+@media(max-width:992px){
+
+.gallery-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.gallery-item.featured{
+    grid-column:1/3;
+    height:320px;
+}
+
+}
+
+@media(max-width:768px){
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-item.featured{
+    grid-column:auto;
+    height:280px;
+}
+
+.gallery-item{
+    height:220px;
+}
+
+}
+
+@media (max-width:768px){
+
+.gallery-grid{
+    grid-template-columns:1fr;
+}
+
+.gallery-item,
+.full-width{
+    grid-column:auto;
+    height:250px;
+}
+
+}
+
+@media(max-width:992px){
+
+.search-section{
+
+margin-top:-40px;
+
+padding:0 20px;
+
+}
+
+.search-container{
+
+grid-template-columns:1fr;
+
+padding:25px;
+
+gap:20px;
+
+}
+
+.search-btn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.destination-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.destination-card{
+
+height:420px;
+
+}
+
+.card-content h3{
+
+font-size:28px;
+
+}
+
+.price strong{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:900px){
+
+.about-pakistan{
+
+grid-template-columns:1fr;
+
+}
+
+.about-pakistan h2{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.explore-destination-section{
+    flex-direction:column;
+}
+
+
+.explore-destination-section .destination-image img{
+    height:350px;
+}
+
+}
+
+/*==========================
+LUXURY PAGE
+==========================*/
+
+@media(max-width:992px){
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.experience-section h2,
+.luxury-gallery h2,
+.luxury-cta h2{
+
+font-size:36px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery-grid img{
+
+height:250px;
+
+}
+
+.tour-buttons{
+
+flex-direction:column;
+
+}
+
+.tour-btn,
+.book-btn{
+
+width:100%;
+text-align:center;
+
+}
+
+}
+
+/*==============================
+TOUR SECTION RESPONSIVE
+==============================*/
+
+@media(max-width:992px){
+
+    .tour-section{
+        grid-template-columns:1fr;
+        gap:40px;
+        padding:80px 6%;
+    }
+
+    .tour-section:nth-child(even) .tour-image,
+    .tour-section:nth-child(even) .tour-content{
+        order:unset;
+    }
+
+    .tour-image img{
+        height:350px;
+    }
+
+    .tour-content h2{
+        font-size:36px;
+    }
+
+    .tour-meta{
+        grid-template-columns:1fr;
+    }
+
+    .tour-buttons{
+        flex-direction:column;
+    }
+
+    .book-btn{
+        text-align:center;
+    }
+}
+
+/*===============================
+FAMILY TOUR RESPONSIVE
+===============================*/
+
+@media(max-width:992px){
+
+    .family-overlay h1{
+        font-size:48px;
+    }
+
+    .family-overlay p{
+        font-size:17px;
+    }
+
+    .family-intro{
+        padding:80px 6%;
+    }
+
+    .family-intro h2{
+        font-size:36px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .family-overlay h1{
+        font-size:38px;
+    }
+
+    .family-overlay p{
+        font-size:16px;
+    }
+
+    .family-intro h2{
+        font-size:30px;
+    }
+
+}
+
+/*=============================
+CULTURAL TOUR
+=============================*/
+
+@media(max-width:991px){
+
+.cultural-overlay h1{
+
+font-size:50px;
+
+}
+
+.cultural-overlay p{
+
+font-size:18px;
+
+}
+
+.cultural-intro h2{
+
+font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.cultural-overlay h1{
+
+font-size:38px;
+
+}
+
+.cultural-overlay p{
+
+font-size:16px;
+
+}
+
+.cultural-intro{
+
+padding:80px 7%;
+
+}
+
+.cultural-intro h2{
+
+font-size:32px;
+
+}
+
+.cultural-intro p{
+
+font-size:16px;
+
+line-height:1.8;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.cultural-overlay h1{
+
+font-size:30px;
+
+}
+
+.cultural-overlay p{
+
+font-size:15px;
+
+}
+
+.cultural-intro h2{
+
+font-size:28px;
+
+}
+
+}
+
+/*=========================
+WINTER TOUR
+=========================*/
+
+@media(max-width:991px){
+
+.winter-overlay h1{
+
+font-size:50px;
+
+}
+
+.winter-intro h2{
+
+font-size:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.winter-overlay h1{
+
+font-size:38px;
+
+}
+
+.winter-overlay p{
+
+font-size:16px;
+
+}
+
+.winter-intro{
+
+padding:80px 7%;
+
+}
+
+.winter-intro h2{
+
+font-size:32px;
+
+}
+
+.winter-intro p{
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.winter-overlay h1{
+
+font-size:30px;
+
+}
+
+.winter-intro h2{
+
+font-size:28px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.upcoming-overlay h1{
+
+    font-size:42px;
+
+}
+
+.upcoming-overlay p{
+
+    font-size:16px;
+
+}
+
+.upcoming-intro h2{
+
+    font-size:36px;
+
+}
+
+.trip-container{
+
+    grid-template-columns:1fr;
+
+}
+
+.trip-footer{
+
+    flex-direction:column;
+    gap:20px;
+    align-items:flex-start;
+
+}
+
+}
+
+@media (max-width: 992px){
+
+    .navbar{
+        width:95%;
+        padding:15px 25px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    .btn-book{
+        display:none;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:80px;
+        left:0;
+        width:100%;
+        background:#0B1F3A;
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+        padding:30px 0;
+        border-radius:20px;
+        display:none;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .logo a{
+        font-size:22px;
+    }
+}
+
+/* Responsive navigation */
+
+.navbar {
+    position: relative;
+}
+
+@media (max-width: 992px) {
+    .menu-btn {
+        display: block;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        background: #0B1F3A;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 15px;
+        display: none;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .btn-book {
+        display: none;
+    }
+}
+
+/* Responsive images */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.destination-card img,
+.gallery-item img,
+.tour-image img,
+.explore-destination-section .destination-image img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        position: relative;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #0B1F3A;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 30px 0;
+        z-index: 9998;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .menu-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10001;
+        cursor: pointer;
+        pointer-events: auto;
+        touch-action: manipulation;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    .navbar .nav-links.active {
+        display: flex !important;
+        z-index: 10000;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .menu-btn {
+        display: flex !important;
+        position: relative;
+        z-index: 99999;
+        pointer-events: auto !important;
+        touch-action: manipulation;
+        -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
+    }
+
+    .navbar .menu-btn i {
+        pointer-events: none;
+    }
+}
